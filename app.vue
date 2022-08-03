@@ -57,12 +57,12 @@ useHead({
     {
       property: "og:image",
       content:
-        "https://res.cloudinary.com/dwfcofnrd/image/fetch/q_auto,f_auto/https://images.prismic.io/timbenniks/375f865f-188c-4f83-9462-c8600aff4061_favicon.png",
+        "https://res.cloudinary.com/dwfcofnrd/image/upload/q_auto,f_auto/Presskit/IMG_1020_fj7nsa.jpg",
     },
     {
       property: "twitter:image",
       content:
-        "https://res.cloudinary.com/dwfcofnrd/image/fetch/q_auto,f_auto/https://images.prismic.io/timbenniks/375f865f-188c-4f83-9462-c8600aff4061_favicon.png",
+        "https://res.cloudinary.com/dwfcofnrd/image/upload/q_auto,f_auto/Presskit/IMG_1020_fj7nsa.jpg",
     },
     {
       property: "twitter:title",

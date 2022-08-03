@@ -16,12 +16,12 @@
         </p>
 
         <p class="text-xl mb-8 leading-relaxed">
-          Next to emcee work I also do speakers interviews, which you can find
+          Next to emcee work I also do
           <a
             href="https://timbenniks.dev/tags/Interview"
             target="_blank"
             rel="noopener"
-            >here</a
+            >speakers interviews</a
           >, and I'm part of
           <a
             href="https://middleware.productions/"

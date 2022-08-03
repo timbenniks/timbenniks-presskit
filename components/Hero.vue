@@ -17,7 +17,7 @@
     >
     <AtomsTitle
       class="absolute bottom-7 md:bottom-14 left-4 md:left-10 text-3xl md:text-8xl font-bold uppercase leading-none md:leading-[5rem]"
-      :lines="['Tim Benniks', 'Presskit']"
+      :lines="['Tim Benniks', 'Press kit']"
       as="h1"
     />
   </section>

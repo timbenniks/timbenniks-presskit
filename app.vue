@@ -1,7 +1,7 @@
 <script lang="ts" setup>
 useSchemaOrg([
   defineWebSite({
-    name: "Tim Benniks Presskit",
+    name: "Tim Benniks Press kit",
   }),
   definePerson({
     name: "Tim Benniks",
@@ -28,19 +28,19 @@ useHead({
     },
     {
       name: "description",
-      content: "Presskit page for Tim Benniks",
+      content: "Press kit page for Tim Benniks",
     },
     {
       name: "og:description",
-      content: "Presskit page for Tim Benniks",
+      content: "Press kit page for Tim Benniks",
     },
     {
       name: "twitter:description",
-      content: "Presskit page for Tim Benniks",
+      content: "Press kit page for Tim Benniks",
     },
     {
       property: "og:site_name",
-      content: "Tim Benniks Presskit",
+      content: "Tim Benniks Press kit",
     },
     {
       property: "og:type",
@@ -52,7 +52,7 @@ useHead({
     },
     {
       property: "og:title",
-      content: "Tim Benniks Presskit",
+      content: "Tim Benniks Press kit",
     },
     {
       property: "og:image",
@@ -66,7 +66,7 @@ useHead({
     },
     {
       property: "twitter:title",
-      content: "Tim Benniks Presskit",
+      content: "Tim Benniks Press kit",
     },
     {
       property: "twitter:card",
@@ -96,7 +96,7 @@ useHead({
     <Style
       href="https://fonts.googleapis.com/css2?family=Lato:wght@400;900&display=swap"
     ></Style>
-    <Title>Tim Benniks Presskit</Title>
+    <Title>Tim Benniks Press kit</Title>
   </Head>
   <main class="max-w-[1512px] mx-auto">
     <hero />

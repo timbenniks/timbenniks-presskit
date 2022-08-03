@@ -6,7 +6,7 @@
       :width="1512"
       :height="872"
       public-id="Presskit/FDLC2019_462.jpg"
-      :widths="[375, 440, 769, 1100, 1340, 1512]"
+      :widths="[375, 440, 769, 1100, 1340, 1512, 2000, 3000]"
       loading="eager"
     />
 

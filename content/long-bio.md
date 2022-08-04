@@ -12,7 +12,7 @@ as: h2
 ::
 
 <p class="text-xl mb-8 leading-relaxed">
-  Over the past 15 years, Tim has worked at various agencies in Amsterdam and Paris with global clients like Nike, Heineken, Google, Tommy Hilfiger, EA Games, CHANEL, Procter & Gamble, Louis Vuitton, and Hermès.
+  Over the past 15 years, Tim has worked at various agencies in Amsterdam and Paris with global clients like Nike, Heineken, Google, Tommy Hilfiger, EA Games, CHANEL, L'Oréal, Procter & Gamble, Louis Vuitton, and Hermès.
 </p>
 
 <p class="text-xl mb-8 leading-relaxed">

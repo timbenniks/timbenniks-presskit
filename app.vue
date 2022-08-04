@@ -57,12 +57,12 @@ useHead({
     {
       property: "og:image",
       content:
-        "https://res.cloudinary.com/dwfcofnrd/image/upload/q_auto,f_auto/Presskit/IMG_1020_fj7nsa.jpg",
+        "https://res.cloudinary.com/dwfcofnrd/image/upload/f_auto,q_auto,w_1280/Presskit/FDLC2019_462.jpg",
     },
     {
       property: "twitter:image",
       content:
-        "https://res.cloudinary.com/dwfcofnrd/image/upload/q_auto,f_auto/Presskit/IMG_1020_fj7nsa.jpg",
+        "https://res.cloudinary.com/dwfcofnrd/image/upload/f_auto,q_auto,w_1280/Presskit/FDLC2019_462.jpg",
     },
     {
       property: "twitter:title",

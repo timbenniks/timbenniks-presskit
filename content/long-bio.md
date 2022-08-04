@@ -6,30 +6,19 @@ type: 'richtext'
 ::le-title
 ---
 class: text-3xl md:text-5xl font-bold uppercase leading-none mb-8
-lines: super official_third person bio
+lines: Mini bio
 as: h2
 ---
 ::
 
 <p class="text-xl mb-8 leading-relaxed">
-  Tim has worked at different agencies in Amsterdam and Paris over the
-  past fifteen years. He has been lucky enough to have had global
-  clients like Nike, Heineken, Google, Tommy Hilfiger, EA Games, Chanel,
-  Proctor & Gamble, Louis Vuitton and Hermès.
+  Over the past 15 years, Tim has worked at various agencies in Amsterdam and Paris with global clients like Nike, Heineken, Google, Tommy Hilfiger, EA Games, CHANEL, Procter & Gamble, Louis Vuitton, and Hermès.
 </p>
 
 <p class="text-xl mb-8 leading-relaxed">
-  Nowadays, Tim is Principal Developer Advocate at Uniform where he
-  works on developer relations, community building and content creation.
-  Next to working at Uniform, Tim is also active in the developer
-  community by speaking at conferences and creating YouTube videos. He
-  collaborates with startups like Cloudinary, Prismic, Zeplin, NuxtJS
-  and he is a part of the MACH Alliance Tech Council. It's all about
-  quality, community and building fancy websites.
+  Currently, Tim is principal developer advocate at Uniform with a focus on developer relations, community building, and content creation. In particular, he plays an active role in the developer community as a frequent speaker at conferences and creator of YouTube videos on modern technologies. He also collaborates regularly with startups like Cloudinary, Prismic, Zeplin, and NuxtJS while serving on the MACH Alliance Tech Council. It's all about quality, community, and development of great websites.
 </p>
 
 <p class="text-xl mb-8 leading-relaxed">
-  A demanding job needs balancing. Tim plays guitar and loves family
-  time with his wife, cats and a two little corgis called Princess
-  Nugget and Scarlet.
+  A demanding job like that needs balancing. Tim plays guitar and revels in family time with his wife, cats, and two little Corgis called Princess Nugget and Scarlet.
 </p>

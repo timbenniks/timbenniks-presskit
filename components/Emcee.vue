@@ -8,28 +8,29 @@
           as="h3"
         />
         <p class="text-xl mb-8 leading-relaxed">
-          As Master of Ceremonies I tend to go in depth with the introduction
-          and Q&A sessions of speakers. An emcee should really add value to a
-          conference. Over the years I have done mainly virtual emcee gigs but
-          in 2022 I have also done them at in-person conferences such as Vue.js
-          Amsterdam.
+          Masters of ceremonies, commonly called emcees, offer a profound value
+          at conferences. As a seasoned emcee, I usually start with an anecdote
+          as introduction, followed by an in-depth Q&A session that truly
+          features the speakers and their content. Over the past few years, my
+          emcee gigs have been largely virtual. Starting 2022, however, I've
+          also acted as emcee at in-person conferences, such as Vuejs Amsterdam.
         </p>
 
         <p class="text-xl mb-8 leading-relaxed">
-          Next to emcee work I also do
+          On top of that, I enjoy conducting
           <a
             href="https://timbenniks.dev/tags/Interview"
             target="_blank"
             rel="noopener"
-            >speakers interviews</a
-          >, and I'm part of
+            >speaker interviews</a
+          >
+          in my role as colead of the YouTube channel
           <a
             href="https://middleware.productions/"
             target="_blank"
             rel="noopener"
-            >Middleware⚡️Productions</a
-          >
-          where we shoot vlogs that capture the vibe of tech events.
+            >Middleware ⚡️ Productions</a
+          >, where we post vlogs that capture the vibe of tech events.
         </p>
 
         <AtomsTitle

@@ -6,17 +6,11 @@ type: 'richtext'
 ::le-title
 ---
 class: text-3xl md:text-5xl font-bold uppercase leading-none mb-8
-lines: super official_third person bio_but shorter
+lines: Mini bio_condensed version
 as: h3
 ---
 ::
 
 <p class="text-xl mb-8 leading-relaxed">
-  Tim is Principal Developer Advocate at Uniform where he works on
-  developer relations, community building and content creation. Next to
-  working at Uniform Tim, is also active in the developer community by
-  speaking at conferences and creating YouTube videos. He collaborates
-  with startups like Cloudinary, Prismic, Zeplin, NuxtJS and he is a
-  part of the MACH Alliance Tech Council. It's all about quality,
-  community and building fancy websites.
+  Tim is principal developer advocate at Uniform with a focus on developer relations, community building, and content creation. He’s active in the developer community through speaking engagements at conferences and creation of YouTube videos on modern technologies. Tim collaborates regularly with startups like Cloudinary, Prismic, Zeplin, and NuxtJS, and is a member of the MACH Alliance Tech Council. It's all about quality, community, and development of great websites.
 </p>

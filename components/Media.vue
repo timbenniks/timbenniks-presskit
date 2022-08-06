@@ -23,6 +23,7 @@
               :widths="[375, 440, 769]"
               loading="lazy"
               class="fancy-image"
+              fetchpriority="low"
             />
           </a>
         </div>
@@ -40,6 +41,7 @@
               :widths="[375, 440, 769]"
               loading="lazy"
               class="fancy-image"
+              fetchpriority="low"
             />
           </a>
         </div>
@@ -57,6 +59,7 @@
               :widths="[375, 440, 769]"
               loading="lazy"
               class="fancy-image"
+              fetchpriority="low"
             />
           </a>
         </div>
@@ -71,6 +74,7 @@
     public-id="Presskit/IMG_3501.jpg"
     :widths="[375, 440, 769, 1280, 1440, 1600]"
     loading="lazy"
+    fetchpriority="low"
   />
 </template>
 

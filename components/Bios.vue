@@ -23,5 +23,6 @@ const { data: shortBio } = await useAsyncData("short-bio", () => {
     public-id="Presskit/IMG_3565.jpg"
     :widths="[375, 440, 769, 1100, 1280]"
     loading="lazy"
+    fetchpriority="low"
   />
 </template>

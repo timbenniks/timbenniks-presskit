@@ -16,6 +16,7 @@ const props = defineProps<{
   widths: Array<number>;
   alt: string;
   loading: "lazy" | "eager";
+  fetchpriority: "low" | "high";
 }>();
 
 const srcset = computed(() => {
@@ -30,5 +31,6 @@ const srcset = computed(() => {
     :width="width"
     :height="height"
     :loading="loading"
+    :fetchpriority="fetchpriority"
   />
 </template>

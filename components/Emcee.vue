@@ -18,6 +18,7 @@ const { data: emcee } = await useAsyncData("emcee", () => {
           :widths="[375, 440, 769, 1100, 1280]"
           loading="lazy"
           class="fancy-image"
+          fetchpriority="low"
         />
       </figure>
     </section>

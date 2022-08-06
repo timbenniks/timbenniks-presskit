@@ -1,11 +1,12 @@
 <template>
   <section class="bg-grey py-8">
     <div class="max-w-[1440px] mx-auto px-8 md:p-0">
-      <ContentLeTitle
-        class="text-3xl md:text-5xl font-bold uppercase leading-none mb-8"
-        lines="Media"
-        as="h3"
-      />
+      <h3 class="text-3xl md:text-5xl font-bold uppercase leading-none mb-8">
+        <span class="inline-block bg-black p-2">
+          <span class="flowing-title inline">Media</span>
+        </span>
+        <br />
+      </h3>
 
       <figure class="media-grid">
         <div class="media-1">

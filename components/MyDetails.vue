@@ -6,11 +6,12 @@ const { data: myDetails } = await useAsyncData("my-details", () => {
 <template>
   <section class="bg-grey py-8">
     <div class="max-w-[1440px] mx-auto px-8 md:p-0">
-      <ContentLeTitle
-        class="text-3xl md:text-5xl font-bold uppercase leading-none mb-8"
-        :lines="myDetails.title"
-        as="h3"
-      />
+      <h3 class="text-3xl md:text-5xl font-bold uppercase leading-none mb-8">
+        <span class="inline-block bg-black p-2">
+          <span class="flowing-title inline">{{ myDetails.title }}</span>
+        </span>
+        <br />
+      </h3>
 
       <ul class="grid grid-cols-1 md:grid-cols-3 gap-12">
         <li v-for="dd in myDetails.data" :key="dd.key">

@@ -4,7 +4,6 @@ const limit = ref(10);
 const {
   data: talks,
   pending,
-  error,
   refresh,
 } = await useAsyncData("talks", () =>
   $fetch(
@@ -19,11 +18,12 @@ function seeAll() {
 </script>
 <template>
   <div class="max-w-[1440px] mx-auto px-8 md:p-0 my-8">
-    <ContentLeTitle
-      class="text-3xl md:text-5xl font-bold uppercase leading-none mb-8"
-      lines="Talks"
-      as="h3"
-    />
+    <h3 class="text-3xl md:text-5xl font-bold uppercase leading-none mb-8">
+      <span class="inline-block bg-black p-2">
+        <span class="flowing-title inline">Talks</span>
+      </span>
+      <br />
+    </h3>
 
     <p class="mb-8 text-xl">
       <template v-if="limit === 10">

@@ -15,10 +15,18 @@
       href="https://timbenniks.dev"
       >timbenniks.dev</a
     >
-    <ContentLeTitle
+
+    <h1
       class="absolute bottom-7 md:bottom-14 left-4 md:left-10 text-3xl md:text-8xl font-bold uppercase leading-none md:leading-[5rem]"
-      lines="Tim Benniks_Press kit"
-      as="h1"
-    />
+    >
+      <span class="inline-block bg-black p-2">
+        <span class="flowing-title inline">Tim Benniks</span>
+      </span>
+      <br />
+      <span class="inline-block bg-black p-2">
+        <span class="flowing-title inline">Press Kit</span>
+      </span>
+      <br />
+    </h1>
   </section>
 </template>

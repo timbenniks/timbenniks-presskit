@@ -1,12 +1,13 @@
 ---
-title: 'Super official third person bio, but shorter'
+title: 'Mini Bio condensed'
+route: 'short-bio'
 type: 'richtext'
 ---
 
 ::le-title
 ---
 class: text-3xl md:text-5xl font-bold uppercase leading-none mb-8
-lines: Mini bio_condensed version
+lines: Mini bio_condensed
 as: h3
 ---
 ::

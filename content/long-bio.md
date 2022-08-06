@@ -1,5 +1,6 @@
 ---
-title: 'Super official third person bio'
+title: 'Mini bio'
+route: 'long-bio'
 type: 'richtext'
 ---
 

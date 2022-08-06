@@ -15,9 +15,9 @@
       href="https://timbenniks.dev"
       >timbenniks.dev</a
     >
-    <AtomsTitle
+    <ContentLeTitle
       class="absolute bottom-7 md:bottom-14 left-4 md:left-10 text-3xl md:text-8xl font-bold uppercase leading-none md:leading-[5rem]"
-      :lines="['Tim Benniks', 'Press kit']"
+      lines="Tim Benniks_Press kit"
       as="h1"
     />
   </section>

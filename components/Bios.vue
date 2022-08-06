@@ -11,12 +11,8 @@ const { data: shortBio } = await useAsyncData("short-bio", () => {
 <template>
   <div class="max-w-[1440px] mx-auto px-8 md:p-0">
     <section class="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-40">
-      <article v-if="longBio">
-        <ContentRenderer :value="longBio" />
-      </article>
-      <article v-if="shortBio">
-        <ContentRenderer :value="shortBio" />
-      </article>
+      <ContentRenderer v-if="longBio" :value="longBio" tag="article" />
+      <ContentRenderer v-if="shortBio" :value="shortBio" tag="article" />
     </section>
   </div>
 

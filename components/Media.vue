@@ -1,9 +1,9 @@
 <template>
   <section class="bg-grey py-8">
     <div class="max-w-[1440px] mx-auto px-8 md:p-0">
-      <AtomsTitle
+      <ContentLeTitle
         class="text-3xl md:text-5xl font-bold uppercase leading-none mb-8"
-        :lines="['Media']"
+        lines="Media"
         as="h3"
       />
 

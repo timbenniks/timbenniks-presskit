@@ -102,6 +102,7 @@ useHead({
     <hero />
     <intro />
     <bios />
+
     <my-details />
     <emcee />
     <media />

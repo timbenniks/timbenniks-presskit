@@ -27,7 +27,7 @@ function seeAll() {
 
     <p class="mb-8 text-xl">
       <template v-if="limit === 10">
-        Showing the 10 latest talks.
+        <span class="mr-2">Showing the 10 latest talks.</span>
         <button class="cta fancy-image" @click="seeAll">Load all</button>
       </template>
       <template v-if="pending">Loading all talks...</template>

@@ -35,6 +35,6 @@
   }
 
   .cta {
-    @apply py-1 px-2 mx-2 border-2 text-white bg-black underline font-black uppercase text-sm;
+    @apply py-1 px-2 border-2 text-white bg-black underline font-black uppercase text-sm;
   }
 }

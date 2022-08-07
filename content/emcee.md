@@ -1,6 +1,6 @@
 ---
 title: 'Emcee'
-route: 'emcee'
+route: '/emcee'
 type: 'richtext'
 ---
 

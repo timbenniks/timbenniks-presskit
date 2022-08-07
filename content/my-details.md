@@ -1,6 +1,6 @@
 ---
 title: 'Details'
-route: 'my-details'
+route: '/my-details'
 type: 'data'
 data: [
   {label: "Name", val: "Tim Benniks"},

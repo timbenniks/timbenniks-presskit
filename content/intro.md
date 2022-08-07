@@ -1,6 +1,6 @@
 ---
 title: 'Intro'
-route: 'intro'
+route: '/intro'
 type: 'richtext'
 ---
 

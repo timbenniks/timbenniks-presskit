@@ -1,6 +1,6 @@
 ---
 title: 'Mini Bio condensed'
-route: 'short-bio'
+route: '/short-bio'
 type: 'richtext'
 ---
 

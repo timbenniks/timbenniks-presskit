@@ -33,7 +33,7 @@ const title2 = computed(
     >
 
     <h1
-      class="absolute bottom-7 md:bottom-14 left-4 md:left-10 text-3xl md:text-8xl font-bold uppercase leading-none md:leading-[5rem]"
+      class="absolute bottom-7 md:bottom-14 left-4 md:left-10 text-3xl md:text-6xl lg:text-8xl font-bold uppercase leading-none lg:leading-[5rem]"
     >
       <span class="inline-block bg-black p-2">
         <span class="flowing-title inline">{{ title1 }}</span>

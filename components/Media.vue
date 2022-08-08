@@ -14,7 +14,7 @@ const image4 = computed(() => props.component.parameters.image4.value[0]);
 
 <template>
   <section class="bg-grey py-8">
-    <div class="max-w-[1440px] mx-auto px-8 md:p-0">
+    <div class="max-w-[1440px] mx-auto px-8 lg:p-0">
       <h3
         class="text-3xl md:text-5xl font-bold uppercase leading-none mb-8"
         v-if="title"

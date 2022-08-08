@@ -25,7 +25,7 @@ function seeAll() {
 }
 </script>
 <template>
-  <div class="max-w-[1440px] mx-auto px-8 md:p-0 my-8">
+  <div class="max-w-[1440px] mx-auto px-8 lg:p-0 my-8">
     <h3
       class="text-3xl md:text-5xl font-bold uppercase leading-none mb-8"
       v-if="title"

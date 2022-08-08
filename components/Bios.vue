@@ -10,7 +10,7 @@ const image = computed(() => props.component.parameters.image.value[0]);
 
 <template>
   <div class="max-w-[1440px] mx-auto px-8 lg:p-0">
-    <section class="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-40">
+    <section class="grid grid-cols-1 md:grid-cols-2 gap-8 lg:gap-40">
       <SlotContent name="left" v-slot="{ child, component }">
         <article>
           <component :is="child" v-bind="{ component }" />

@@ -1,26 +1,39 @@
+<script lang="ts" setup>
+import type { ComponentInstance } from "@uniformdev/canvas";
+
+const props = defineProps<{
+  component: ComponentInstance;
+}>();
+
+const title = computed(() => props.component.parameters.title.value);
+const image1 = computed(() => props.component.parameters.image1.value[0]);
+const image2 = computed(() => props.component.parameters.image2.value[0]);
+const image3 = computed(() => props.component.parameters.image3.value[0]);
+const image4 = computed(() => props.component.parameters.image4.value[0]);
+</script>
+
 <template>
   <section class="bg-grey py-8">
     <div class="max-w-[1440px] mx-auto px-8 md:p-0">
-      <h3 class="text-3xl md:text-5xl font-bold uppercase leading-none mb-8">
+      <h3
+        class="text-3xl md:text-5xl font-bold uppercase leading-none mb-8"
+        v-if="title"
+      >
         <span class="inline-block bg-black p-2">
-          <span class="flowing-title inline">Media</span>
+          <span class="flowing-title inline">{{ title }}</span>
         </span>
         <br />
       </h3>
 
       <figure class="media-grid">
         <div class="media-1">
-          <a
-            href="https://res.cloudinary.com/dwfcofnrd/image/upload/Presskit/IMG_0144.jpg"
-            target="_blank"
-            rel="noopener"
-          >
+          <a :href="image1.url" target="_blank" rel="noopener">
             <AtomsImage
-              alt="Tim Benniks Portrait, Berlin 2022"
-              :width="4640"
-              :height="6960"
-              public-id="Presskit/IMG_0144.jpg"
-              :widths="[375, 440, 769]"
+              :alt="image1.alt"
+              :width="image1.width"
+              :height="image1.height"
+              :public-id="image1.publicId"
+              :widths="image1.widths.split(',')"
               loading="lazy"
               class="fancy-image"
               fetchpriority="low"
@@ -28,17 +41,13 @@
           </a>
         </div>
         <div class="media-2">
-          <a
-            href="https://res.cloudinary.com/dwfcofnrd/image/upload/Presskit/tim_oct_2021.jpg"
-            target="_blank"
-            rel="noopener"
-          >
+          <a :href="image2.url" target="_blank" rel="noopener">
             <AtomsImage
-              alt="Tim Benniks in his farm studio, 2021"
-              :width="6016"
-              :height="3384"
-              public-id="Presskit/tim_oct_2021.jpg"
-              :widths="[375, 440, 769]"
+              :alt="image2.alt"
+              :width="image2.width"
+              :height="image2.height"
+              :public-id="image2.publicId"
+              :widths="image2.widths.split(',')"
               loading="lazy"
               class="fancy-image"
               fetchpriority="low"
@@ -46,17 +55,13 @@
           </a>
         </div>
         <div class="media-3">
-          <a
-            href="https://res.cloudinary.com/dwfcofnrd/image/upload/Presskit/tim-2020-s.png"
-            target="_blank"
-            rel="noopener"
-          >
+          <a :href="image3.url" target="_blank" rel="noopener">
             <AtomsImage
-              alt="Tim Benniks in Paris 2020"
-              :width="1920"
-              :height="1080"
-              public-id="Presskit/tim-2020-s.png"
-              :widths="[375, 440, 769]"
+              :alt="image3.alt"
+              :width="image3.width"
+              :height="image3.height"
+              :public-id="image3.publicId"
+              :widths="image3.widths.split(',')"
               loading="lazy"
               class="fancy-image"
               fetchpriority="low"
@@ -68,11 +73,11 @@
   </section>
 
   <AtomsImage
-    alt="Tim Benniks on stage in 2020"
-    :width="2028"
-    :height="914"
-    public-id="Presskit/IMG_3501.jpg"
-    :widths="[375, 440, 769, 1280, 1440, 1600]"
+    :alt="image4.alt"
+    :width="image4.width"
+    :height="image4.height"
+    :public-id="image4.publicId"
+    :widths="image4.widths.split(',')"
     loading="lazy"
     fetchpriority="low"
   />

@@ -1,4 +1,12 @@
-<script setup>
+<script lang="ts" setup>
+import type { ComponentInstance } from "@uniformdev/canvas";
+
+const props = defineProps<{
+  component: ComponentInstance;
+}>();
+
+const title = computed(() => props.component.parameters.title.value);
+
 const limit = ref(10);
 
 const {
@@ -18,9 +26,12 @@ function seeAll() {
 </script>
 <template>
   <div class="max-w-[1440px] mx-auto px-8 md:p-0 my-8">
-    <h3 class="text-3xl md:text-5xl font-bold uppercase leading-none mb-8">
+    <h3
+      class="text-3xl md:text-5xl font-bold uppercase leading-none mb-8"
+      v-if="title"
+    >
       <span class="inline-block bg-black p-2">
-        <span class="flowing-title inline">Talks</span>
+        <span class="flowing-title inline">{{ title }}</span>
       </span>
       <br />
     </h3>

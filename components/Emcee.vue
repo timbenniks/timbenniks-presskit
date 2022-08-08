@@ -1,7 +1,17 @@
-<script setup>
-const { data: emcee } = await useAsyncData("emcee", () => {
-  return queryContent("/emcee").findOne();
+<script lang="ts" setup>
+import type { ComponentInstance } from "@uniformdev/canvas";
+
+const props = defineProps<{
+  component: ComponentInstance;
+}>();
+
+const entry = computed(() => props.component.parameters.entry.value?.id);
+
+const { data: emcee } = await useAsyncData(entry.value.toString(), () => {
+  return queryContent(`/${entry.value}`).findOne();
 });
+
+const image = computed(() => props.component.parameters.image.value[0]);
 </script>
 
 <template>
@@ -11,11 +21,11 @@ const { data: emcee } = await useAsyncData("emcee", () => {
 
       <figure>
         <AtomsImage
-          alt="Tim Benniks on stage in 2022"
-          :width="1119"
-          :height="1963"
-          public-id="Presskit/IMG_1020_fj7nsa.jpg"
-          :widths="[375, 440, 769, 1100, 1280]"
+          :alt="image.alt"
+          :width="image.width"
+          :height="image.height"
+          :public-id="image.publicId"
+          :widths="image.widths.split(',')"
           loading="lazy"
           class="fancy-image"
           fetchpriority="low"

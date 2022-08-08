@@ -1,27 +1,36 @@
-<script setup>
-const { data: longBio } = await useAsyncData("long-bio", () => {
-  return queryContent("/long-bio").findOne();
-});
+<script lang="ts" setup>
+import type { ComponentInstance } from "@uniformdev/canvas";
 
-const { data: shortBio } = await useAsyncData("short-bio", () => {
-  return queryContent("/short-bio").findOne();
-});
+const props = defineProps<{
+  component: ComponentInstance;
+}>();
+
+const image = computed(() => props.component.parameters.image.value[0]);
 </script>
 
 <template>
   <div class="max-w-[1440px] mx-auto px-8 md:p-0">
     <section class="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-40">
-      <ContentRenderer v-if="longBio" :value="longBio" tag="article" />
-      <ContentRenderer v-if="shortBio" :value="shortBio" tag="article" />
+      <SlotContent name="left" v-slot="{ child, component }">
+        <article>
+          <component :is="child" v-bind="{ component }" />
+        </article>
+      </SlotContent>
+
+      <SlotContent name="right" v-slot="{ child, component }">
+        <article>
+          <component :is="child" v-bind="{ component }" />
+        </article>
+      </SlotContent>
     </section>
   </div>
 
   <AtomsImage
-    alt="Tim Benniks on stage in 2020"
-    :width="1280"
-    :height="492"
-    public-id="Presskit/IMG_3565.jpg"
-    :widths="[375, 440, 769, 1100, 1280]"
+    :alt="image.alt"
+    :width="image.width"
+    :height="image.height"
+    :public-id="image.publicId"
+    :widths="image.widths.split(',')"
     loading="lazy"
     fetchpriority="low"
   />

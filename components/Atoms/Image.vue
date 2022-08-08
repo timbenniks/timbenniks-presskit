@@ -11,8 +11,8 @@ function createSrcSet(widths: Array<number>, publicId: string) {
 
 const props = defineProps<{
   publicId: string;
-  width: number;
-  height: number;
+  width: number | string;
+  height: number | string;
   widths: Array<number>;
   alt: string;
   loading: "lazy" | "eager";

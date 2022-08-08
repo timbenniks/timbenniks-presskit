@@ -1,4 +1,6 @@
 <script lang="ts" setup>
+import { resolveRenderer } from "./components/componentMapping";
+
 useSchemaOrg([
   defineWebSite({
     name: "Tim Benniks Press kit",
@@ -86,6 +88,10 @@ useHead({
     },
   ],
 });
+
+const { $useComposition } = useNuxtApp();
+const { data } = await $useComposition({ slug: "/" });
+const composition = computed(() => data.value.composition);
 </script>
 <template>
   <Head>
@@ -99,13 +105,12 @@ useHead({
     <Title>Tim Benniks Press kit</Title>
   </Head>
   <main class="max-w-[1512px] mx-auto">
-    <hero />
-    <intro />
-    <bios />
-
-    <my-details />
-    <emcee />
-    <media />
-    <talks />
+    <Composition
+      v-if="composition"
+      :data="composition"
+      :resolve-renderer="resolveRenderer"
+    >
+      <SlotContent name="components" />
+    </Composition>
   </main>
 </template>

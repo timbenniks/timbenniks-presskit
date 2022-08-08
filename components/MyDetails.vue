@@ -1,8 +1,17 @@
-<script setup>
-const { data: myDetails } = await useAsyncData("my-details", () => {
-  return queryContent("/my-details").findOne();
+<script lang="ts" setup>
+import type { ComponentInstance } from "@uniformdev/canvas";
+
+const props = defineProps<{
+  component: ComponentInstance;
+}>();
+
+const entry = computed(() => props.component.parameters.entry.value?.id);
+
+const { data: myDetails } = await useAsyncData(entry.value.toString(), () => {
+  return queryContent(`/${entry.value}`).findOne();
 });
 </script>
+
 <template>
   <section class="bg-grey py-8">
     <div class="max-w-[1440px] mx-auto px-8 md:p-0">

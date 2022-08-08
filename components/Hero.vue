@@ -6,7 +6,12 @@ const props = defineProps<{
 }>();
 
 const image = computed(() => props.component.parameters.image.value[0]);
-const title = computed(() => props.component.parameters.title.value);
+const title1 = computed(
+  () => props.component.parameters.title.value.split("_")[0]
+);
+const title2 = computed(
+  () => props.component.parameters.title.value.split("_")[1]
+);
 </script>
 <template>
   <section class="relative aspect-[1512/872] mb-6">
@@ -31,11 +36,11 @@ const title = computed(() => props.component.parameters.title.value);
       class="absolute bottom-7 md:bottom-14 left-4 md:left-10 text-3xl md:text-8xl font-bold uppercase leading-none md:leading-[5rem]"
     >
       <span class="inline-block bg-black p-2">
-        <span class="flowing-title inline">{{ title.split("_")[0] }}</span>
+        <span class="flowing-title inline">{{ title1 }}</span>
       </span>
       <br />
-      <span class="inline-block bg-black p-2">
-        <span class="flowing-title inline">{{ title.split("_")[1] }}</span>
+      <span class="inline-block bg-black p-2" v-if="title2">
+        <span class="flowing-title inline">{{ title2 }}</span>
       </span>
       <br />
     </h1>

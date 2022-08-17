@@ -12,6 +12,8 @@ export default defineNuxtConfig({
 		readOnlyApiKey: process.env.UNIFORM_API_KEY,
 	},
 	schemaOrg: {
-		canonicalHost: 'https://presskit.timbenniks.dev',
+		meta: {
+			host: 'https://presskit.timbenniks.dev',
+		}
 	},
 })

@@ -1,7 +1,5 @@
 <script lang="ts" setup>
-import type { ComponentInstance, ComponentParameter } from "@uniformdev/canvas";
-
-// type MyEntry = ComponentParameter<{ id: string }>;
+import type { ComponentInstance } from "@uniformdev/canvas";
 
 const props = defineProps<{
   component: ComponentInstance;

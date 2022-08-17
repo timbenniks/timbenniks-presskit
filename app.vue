@@ -10,7 +10,7 @@ useSchemaOrg([
     image: "/icon.png",
     sameAs: ["https://timbenniks.dev/"],
   }),
-  defineWebPagePartial(),
+  defineWebPage(),
 ]);
 useHead({
   viewport: "width=device-width, initial-scale=1",

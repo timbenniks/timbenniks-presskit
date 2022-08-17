@@ -9,16 +9,16 @@
   "devDependencies": {
     "@nuxt/content": "^2.0.1",
     "@nuxtjs/tailwindcss": "^5.3.1",
-    "nuxt": "3.0.0-rc.6",
-    "@uniformdev/uniform-nuxt": "17.0.0",
     "@uniformdev/canvas": "17.0.0",
     "@uniformdev/canvas-vue": "17.0.0",
     "@uniformdev/cli": "17.0.0",
     "@uniformdev/context": "17.0.0",
-    "@uniformdev/context-vue": "17.0.0"
+    "@uniformdev/context-vue": "17.0.0",
+    "@uniformdev/uniform-nuxt": "17.0.0",
+    "nuxt": "^3.0.0-rc.8"
   },
   "dependencies": {
     "@tailwindcss/line-clamp": "^0.4.0",
-    "nuxt-schema-org": "^0.7.0-beta.3"
+    "nuxt-schema-org": "1.0.0-beta.12"
   }
 }

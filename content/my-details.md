@@ -5,7 +5,7 @@ type: 'data'
 data: [
   {label: "Name", val: "Tim Benniks"},
   {label: "Company", val: "Uniform", link: "https://uniform.dev"},
-  {label: "Title", val: "Principal Developer Advocate"},
+  {label: "Title", val: "Director of Developer Relations"},
   {label: "Location", val: "Greater Toulouse Metropolitan Area, France"},
   {label: "E-mail", val: "timb@uniform.dev"},
   {label: "Website", val: "https://timbenniks.dev", link: "https://timbenniks.dev"},

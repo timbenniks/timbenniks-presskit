@@ -5,7 +5,7 @@ type: 'richtext'
 ---
 
 <p class="text-xl leading-relaxed">
-  Tim Benniks is principal developer advocate at
+  Tim Benniks is director of developer relations at
   <a href="https://uniform.dev" rel="noopener" target="_blank">Uniform</a>,
   <a href="https://machalliance.org" rel="noopener" target="_blank"
     >MACH Alliance Tech Council member</a
